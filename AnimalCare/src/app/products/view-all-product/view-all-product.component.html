@@ -1,0 +1,50 @@
+
+<div class="d-flex" id="wrapper">
+    <div class="border-end"><br><br>
+        <a href="shop/products" class="list-group-item" >view all products</a>
+        <div class="list-group" *ngFor="let cat of categoryList">
+            <a href="shop/products/category/{{cat.id}}" class="list-group-item" >{{cat.categoryName}}</a>          
+        </div>
+    </div>
+
+        <section class="py-8 ">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5"  *ngFor="let prod of productData">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{{prod.productImg}}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h4 class="fw-bolder">{{prod.productName}}</h4><br>
+                                    <!-- Product price-->
+                                    ${{prod.price}}
+                                    <!-- Product description--><br>
+                                    {{prod.description}}<br>
+                                   <h6> Product rating : {{prod.rating}} star</h6>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" routerLink="view-product/{{prod.id}}">View product</a>
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="addtoCart(prod)">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+          <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+

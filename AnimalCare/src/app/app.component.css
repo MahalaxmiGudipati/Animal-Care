@@ -1,0 +1,48 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #e67e22;
+  border-radius: 5rem;
+}
+#title{
+    font-size: 30px;
+    margin-left:11px;
+    font-weight: bold;
+}.navbar{
+    position: sticky;
+    top: 0;
+}
+nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+.navlist{
+    padding-left: 20%;
+    font-size:18px;
+}
+.nav-item{
+    margin-left:20px;
+    font-weight: bold;
+}
+.navright{
+    padding-left:20%;
+}
+i{
+    font-size: 22px;
+    color:black;
+    margin-right: 20px;
+    margin-top: 2px;
+}

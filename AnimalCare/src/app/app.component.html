@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top bg-light">
+    <a class="navbar-brand" routerLink="/" id="title">ANIMAL CARE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navlist">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Adopt">Adopt</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#shop" routerLink="/shop/products">Shop</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+        </li>
+        
+      </ul>
+    </span>
+    <span class="navright d-flex">
+    
+        <a class="nav-link" routerLink="cart" ><i class="fa-solid fa-cart-shopping"></i></a>&nbsp;
+        <a class="nav-link" routerLink="login" ><i class="fa-solid fa-user"></i></a>
+        
+   
+    </span>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  <lib-ng-toast></lib-ng-toast>

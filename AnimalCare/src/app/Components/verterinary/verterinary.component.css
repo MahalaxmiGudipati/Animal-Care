@@ -1,0 +1,555 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #e67e22;
+  border-radius: 5rem;
+}
+heading span {
+  color: #e67e22;
+}
+.btn {
+  display: inline-block;
+  /* margin-top: 1rem; */
+  padding: .5rem 2.0rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  border: 0.2rem solid #faf9fb;
+  cursor: pointer;
+  background: none;
+  color: #f4f4f9;
+  font-size: 1.0rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #130f40;
+  z-index: -1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-clip-path: circle(0% at 0% 5%);
+          clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+.btn:hover {
+  color: #fff;
+}
+
+.icons div{
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: .5rem;
+  background: #eee;
+  color:var(--black);
+  font-size: 2rem;
+  margin-left: .3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+ .icons div:hover{
+  background: var(--orange);
+  color:#fff;
+}
+
+.home {
+    min-height: 100vh;
+    background: url(/assets/images/home_bg_img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .home .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 14rem;
+  }
+  .home .content {
+    position: absolute;
+    left:51%;
+    float: right;
+    top:20%;
+  }
+  
+  .home .content h3 {
+    font-size: 4rem;
+    color: #fff;
+    margin-right: 40%;
+ 
+  }
+ #search{
+    font-size: 4rem;
+    width:30%;
+ }
+ #quote{
+    width:40%;
+    /* border: 2px solid red; */
+    position:absolute;
+    top: 20%;
+    left:5%;
+    padding: 16px 16px;
+}
+#quote h2{
+    color:rgb(45, 31, 115); 
+}
+#info{
+    width:40%;
+    /* border: 2px solid coral; */
+    position:absolute;
+    top: 45%;
+    left:5%;
+    padding: 16px 16px;
+    color:darkslateblue;
+    font-size: 16px;
+}
+/*text section*/
+
+section.text-section {
+    padding: 100px 0px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn-primary {
+    /* background: #fcc302;
+    border-color: #fcc302; */
+    background:  #e67e22;
+    border-color:  #e67e22;
+   
+}
+
+.btn-primary:hover {
+    background: #fcc302 !important;
+    border-color: #fcc302 !important;
+    opacity: 0.9;
+}
+
+.text-col {
+    max-width: 466px;
+}
+
+.text-col h2, .text-col p {
+    margin-bottom: 20px;
+}
+
+.right-img {
+    position: relative;
+    padding-left: 30px;
+}
+
+.right-img:before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: #e67e22;
+    position: absolute;
+    z-index: -1;
+    left: -1px;
+    bottom: -32px;
+}
+
+
+/*Services*/
+
+section.services-section {
+    background:  #e67e22;
+    padding: 100px 0px 70px;
+    text-align: center;
+    color: #FFF;
+}
+
+section.services-section .section-title {
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.services-box h3 {
+    color: #FFF;
+}
+
+.services-box {
+    margin-bottom: 30px;
+}
+
+.services-box p {
+    color: #FFF;
+}
+
+.services-img {
+    max-width: 340px;
+    margin: 0px auto 30px;
+}
+
+.services-img img {
+    border: 5px solid #FFF;
+}
+
+section.text-section.animal-section .text-col {
+    text-align: right;
+}
+
+
+/*Team */
+
+section.team-section {
+    padding: 100px 0px 70px;
+    text-align: center;
+}
+
+.team-img {
+    max-width: 300px;
+    margin: 0px auto 30px;
+}
+
+.team-box {
+    margin-bottom: 30px;
+}
+
+.team-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ul.team-social {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.team-social li {
+    display: inline-block;
+}
+
+ul.team-social li a {
+    width: 30px;
+    height: 30px;
+    background:  #e67e22;
+    display: inline-block;
+    line-height: 30px;
+    color: #FFF;
+    border-radius: 50%;
+}
+
+/*Appointment */
+
+.appoint {
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  .appoint .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  
+  .appoint .image img {
+    width: 100%;
+  }
+  
+  .appoint form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+    padding: 0.5rem 3%;
+  }
+  
+  .appoint form .btn1 {
+    text-align: center;
+    width: 80%;
+    /* padding-right:20px; */
+    background: #e67e22;
+    border: 2.5px solid #FFF;
+  }
+  
+  .appoint form .btn1:hover {
+    background: #fcc302
+  }
+  
+  .appoint form h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #130f40;
+  }
+  
+  .appoint form .box, .appointform textarea {
+    width: 80%;
+    border-bottom: 0.1rem solid #130f40;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    font-size: 1rem;
+    text-transform: none;
+    color: #130f40;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+  }
+  
+  .appoint form textarea {
+    height: 13rem;
+    resize: none;
+  }
+
+/*Stats */
+
+
+.stats-section{
+	background:url(/assets/images/bg.jpg) no-repeat;
+}
+
+.stats-section {
+    background-size: cover !important;
+    padding: 100px 0px 70px;
+}
+
+.stats-box {
+    text-align: center;
+}
+
+.stats-box h2 {
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.stats-box h3 {
+    color: #FFF;
+    font-weight: 700;
+}
+
+/*Blog*/
+
+section.blog-section {
+    padding: 100px 0px 70px;
+}
+
+/* .blog-info {} */
+
+.blog-info h3 {
+    font-size: 22px;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.blog-img {
+    margin: -20px -20px 23px;
+}
+
+.blog-box {
+    margin: 0px auto 30px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+}
+
+a.link-more {
+    text-decoration: none;
+    color: #00bec9;
+    font-weight: 500;
+}
+
+span.post-date {
+    color: #00bec9;
+    display: inline-block;
+    margin: 11px 0px;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+    background: #343434;
+    padding: 100px 0px;
+    color: #FFF;
+}
+
+footer h3 {
+    font-size: 26px;
+    color: #FFF;
+}
+
+.footer-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu ul li {
+    list-style: none;
+}
+
+.footer-menu ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+ul.footer-social {
+    margin: 20px 0px 0px;
+    padding: 0px;
+}
+
+ul.footer-social li {
+    list-style: none;
+    display: inline-flex;
+}
+
+ul.footer-social li a {
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+ul.footer-social li a:hover {
+    background:  #e67e22;;
+    color: #FFF;
+} 
+
+.input-group {
+    max-width: 407px;
+}
+
+.input-group button {
+    padding: 9px 33px;
+    border: 2px solid #00bec9;
+    background: #00bec9;
+    color: #FFF;
+    font-size: 21px;
+}
+
+
+
+/*responisve css*/
+
+
+
+@media (max-width:767px){
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    line-height: 36px;
+}
+
+.banner-text p {
+    font-size: 15px;
+}
+
+section.banner-section {
+    padding: 30px 0px 30px;
+}
+
+.banner-img {
+    max-width: 300px;
+    margin: 0px auto;
+}
+section.services-section {
+    padding: 40px 0px 11px;
+}	
+section.text-section {
+    padding: 40px 0px 81px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.text-col h2, .text-col p {
+    margin-bottom: 10px;
+}
+
+.text-col {
+    text-align: center;
+    margin-bottom: 20px;
+}
+section.text-section.animal-section {
+    padding-bottom: 51px;
+}
+
+section.text-section.animal-section .text-col {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+section.shop-section {
+    padding: 40px 0px 10px;
+} 	
+	
+section.team-section {
+    padding: 40px 0px 10px;
+}	
+.stats-section {
+    padding: 30px 0px 30px;
+}
+
+.stats-box {
+    margin-bottom: 30px;
+}	
+section.blog-section {
+    padding: 40px 0px 20px;
+}	
+footer {
+    padding: 40px 0px;
+}
+
+.footer-col {
+    margin-bottom: 34px;
+}
+ 	
+}

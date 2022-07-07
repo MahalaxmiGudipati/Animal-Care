@@ -1,0 +1,201 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "Dog Pedigree",
+      "description": "Food for dogs",
+      "rating": "5",
+      "price": 500,
+      "productImg": "http://localhost:4200/assets/pedigreeDog.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "productName": "Cat Food",
+      "description": "Food for cats",
+      "rating": "5",
+      "price": 370,
+      "productImg": "http://localhost:4200/assets/catFood.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "productName": "Rabbit Food",
+      "description": "Food for Rabbits",
+      "rating": "5",
+      "price": 500,
+      "productImg": "http://localhost:4200/assets/rabbitFood.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "productName": "Dog Food",
+      "description": "Food for dogs",
+      "rating": "5",
+      "price": 500,
+      "productImg": "http://localhost:4200/assets/dogFood.jpeg",
+      "isAvailable": 1
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "productName": "Dog Shirt",
+      "description": "clothing for dogs",
+      "rating": "5",
+      "price": 500,
+      "productImg": "http://localhost:4200/assets/dogShirt.jpeg",
+      "isAvailable": 1
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "productName": "Dog Shirt 2",
+      "description": "clothing for dogs",
+      "rating": "5",
+      "price": 1500,
+      "productImg": "http://localhost:4200/assets/dogClothes2.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "productName": "Dog Shirt 3",
+      "description": "clothing for dogs",
+      "rating": "5",
+      "price": 1500,
+      "productImg": "http://localhost:4200/assets/dogClothes3.jfif",
+      "isAvailable": 1
+    },
+    {
+      "id": 8,
+      "categoryId": 3,
+      "productName": "shampoo",
+      "description": "grooming for pets",
+      "rating": "5",
+      "price": 700,
+      "productImg": "http://localhost:4200/assets/shampoo.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 9,
+      "categoryId": 3,
+      "productName": "shampoo1",
+      "description": "grooming for pets",
+      "rating": "5",
+      "price": 500,
+      "productImg": "http://localhost:4200/assets/shampoo2.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "productName": "shampoo2",
+      "description": "grooming for pets",
+      "rating": "5",
+      "price": 1500,
+      "productImg": "http://localhost:4200/assets/grooming1.jfif",
+      "isAvailable": 1
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "productName": "pet wipes",
+      "description": "grooming for pets",
+      "rating": "5",
+      "price": 1000,
+      "productImg": "http://localhost:4200/assets/petWipes.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "productName": "Brush",
+      "description": "Brush in blue for cats and dogs",
+      "rating": "5",
+      "price": 1000,
+      "productImg": "http://localhost:4200/assets/brush1.jpg",
+      "isAvailable": 1
+    },
+    {
+      "id": 13,
+      "categoryId": 4,
+      "productName": "toy1",
+      "description": "toys for pets",
+      "rating": "5",
+      "price": 500,
+      "productImg": "http://localhost:4200/assets/toy1.jpeg",
+      "isAvailable": 1
+    },
+    {
+      "id": 14,
+      "categoryId": 4,
+      "productName": "Ball",
+      "description": "toys for pets",
+      "rating": "5",
+      "price": 400,
+      "productImg": "http://localhost:4200/assets/ball1.jfif",
+      "isAvailable": 1
+    },
+    {
+      "id": 15,
+      "categoryId": 4,
+      "productName": "Toy 2",
+      "description": "toys for pets",
+      "rating": "5",
+      "price": 400,
+      "productImg": "http://localhost:4200/assets/toy2.webp",
+      "isAvailable": 1
+    },
+    {
+      "id": 16,
+      "categoryId": 4,
+      "productName": "Toy Dumb bell",
+      "description": "toys for pets",
+      "rating": "5",
+      "price": 400,
+      "productImg": "http://localhost:4200/assets/dumbbell.jpg",
+      "isAvailable": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "petfood"
+    },
+    {
+      "id": 2,
+      "categoryName": "petclothes"
+    },
+    {
+      "id": 3,
+      "categoryName": "gromming"
+    },
+    {
+      "id": 4,
+      "categoryName": "toys"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Sindhuja",
+      "email": "maaram.sindhuja@gmail.com",
+      "password": "sindhuja",
+      "mobile": 6302731729,
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,38 @@
+<div class="container">
+<div class="d-flex">
+<div class="border-end pr-4 pt-5 pl-2"><br><br>
+    <a href="shop/products" class="list-group-item" >view all products</a>
+    <div class="list-group" *ngFor="let cat of categoryList">
+        <a href="shop/products/category/{{cat.id}}" class="list-group-item" >{{cat.categoryName}}</a>  
+    </div>
+</div>
+    <!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-2 gx-lg-5 align-items-center">
+            <div class="col-md-7"><img class="card-img-top mb-5 mb-md-0 img-thumbnail" src="{{productData.productImg}}" alt="..." /></div>
+            <div class="col-md-4">
+                <div><h1 class="large">{{productData.productName}}</h1></div>
+                <h6>Shop item {{productID}}</h6>
+                <div class="fs-5 mb-5">
+                    <span>Rs. {{productData.price}}</span>
+                </div>
+                <p class="lead">{{productData.description}}</p>
+                <div class="d-flex">
+                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                    <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="addtoCart(productData)">
+                        <i class="bi-cart-fill me-1"></i>
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+</footer>
